@@ -24,6 +24,7 @@ resources:
 # Kubeflow Istio Resources
 - ../common/istio-1-11/kubeflow-istio-resources/base
 
+
 # Kubeflow Pipelines
 - ../apps/pipeline/upstream/env/platform-agnostic-multi-user
 # KFServing
@@ -31,7 +32,7 @@ resources:
 # Katib
 - ../apps/katib/upstream/installs/katib-with-kubeflow
 # Central Dashboard
-- ../apps/centraldashboard/upstream/overlays/istio
+- ../apps/centraldashboard/upstream/overlays/kserve
 # Admission Webhook
 - ../apps/admission-webhook/upstream/overlays/cert-manager
 # Notebook Controller
@@ -53,7 +54,7 @@ resources:
 
 # KServe
 - ../contrib/kserve/kserve
-- ../contrib/kserve/models-web-app/base
+- ../contrib/kserve/models-web-app/overlays/kubeflow
 
 # Spark-operator
 - ../contrib/spark/spark-operator/crds
