@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+
+# Spark-operator
+- ../contrib/spark/spark-operator/crds
+- ../contrib/spark/spark-operator/spark-application-rbac
+- ../contrib/spark/spark-operator/spark-operator-install
+#- ../contrib/spark/spark-operator/spark-operator-with-webhook-install
