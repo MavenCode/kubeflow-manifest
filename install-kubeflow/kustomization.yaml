@@ -55,9 +55,3 @@ resources:
 # KServe
 - ../contrib/kserve/kserve
 - ../contrib/kserve/models-web-app/overlays/kubeflow
-
-# Spark-operator
-- ../contrib/spark/spark-operator/crds
-- ../contrib/spark/spark-operator/spark-application-rbac
-- ../contrib/spark/spark-operator/spark-operator-install
-#- ../contrib/spark/spark-operator/spark-operator-with-webhook-install
